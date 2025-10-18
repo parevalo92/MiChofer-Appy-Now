@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Mi chofer</title>
+</head>
+<body>
+
+<!-- Header / Nav -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">
+                    <img class="logoimg" src="img/logomf1.png" alt="">
+                </h2>
+            </a>        
+                
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link"
+                    data-section="header" data-value="home-menu">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link"
+                    data-section="header" data-value="about-menu">¿Porque unirte?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#beneficios" class="nav-link"
+                    data-section="header" data-value="services-menu">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#requisitos" class="nav-link"
+                    data-section="header" data-value="gallery-menu">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#formulario" class="nav-link"
+                    data-section="header" data-value="contact-menu">Aplica Ahora</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactus" class="nav-link"
+                    data-section="header" data-value="contact-menu">Descarga nuestra app</a>
+                </li>
+                <div class="langbuttons">
+                    <button class="eslogo" data-language="es">
+                        <img class="esimg" src="img/eslogo.png" alt="">
+                    </button>
+                    <button class="uslogo" data-language="en">
+                        <img class="usimg" src="img/uslogo.png" alt="">
+                    </button>
+                </div>
+            </ul>  
+            <button id="menu-open-button" class="fas fa-bars"></button> 
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Conduce con <span>MiChoferSV</span></h1>
+      <p>Forma parte de una red de conductores profesionales en El Salvador. Gana más, trabaja con flexibilidad y sé tu propio jefe.</p>
+      <a href="#formulario" class="btn">Quiero ser chofer</a>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <h2>¿Por qué unirte a MiChoferSV?</h2>
+      <p>En <strong>MiChoferSV</strong> creemos que cada conductor merece respeto, seguridad y oportunidades reales de crecimiento. 
+      Nuestra plataforma conecta conductores responsables con clientes que buscan un servicio confiable y profesional.</p>
+      <ul>
+        <li>🔒 Seguridad garantizada en cada viaje</li>
+        <li>💸 Pagos justos y puntuales</li>
+        <li>📅 Horarios flexibles</li>
+        <li>🚗 Oportunidades de crecimiento dentro de la empresa</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <h2>Beneficios de ser parte de nuestro equipo</h2>
+      <div class="benefit-grid">
+        <div class="benefit">
+          <h3>Ingresos competitivos</h3>
+          <p>Recibe más por cada viaje y obtén bonos por desempeño.</p>
+        </div>
+        <div class="benefit">
+          <h3>Apoyo constante</h3>
+          <p>Contamos con un equipo disponible para ayudarte ante cualquier inconveniente.</p>
+        </div>
+        <div class="benefit">
+          <h3>Capacitación gratuita</h3>
+          <p>Te ayudamos a mejorar tus habilidades de conducción y atención al cliente.</p>
+        </div>
+        <div class="benefit">
+          <h3>Recompensas por lealtad</h3>
+          <p>Recibe beneficios especiales mientras más tiempo formes parte de MiChoferSV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos -->
+  <section class="requirements" id="requisitos">
+    <div class="container">
+      <h2>Requisitos para aplicar</h2>
+      <ul>
+        <li>📄 Licencia de conducir vigente (Tipo Liviana o Superior)</li>
+        <li>🧾 DUI y antecedentes actualizados</li>
+        <li>🚘 Vehículo en buen estado (opcional, también ofrecemos oportunidades sin vehículo propio)</li>
+        <li>📱 Teléfono inteligente con conexión a internet</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section class="apply" id="formulario">
+    <div class="container">
+      <h2>Aplica ahora</h2>
+      <p>Completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
+      <form action="#" method="POST" class="form">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email">
+
+        <label for="experiencia">¿Tienes experiencia como chofer?</label>
+        <select id="experiencia" name="experiencia">
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <button type="submit" class="btn">Enviar solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="container">
+      <p>© 2025 MiChoferSV. Todos los derechos reservados.</p>
+    </div>
+  </section>
+    
+    <!-- My custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
