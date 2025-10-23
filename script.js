@@ -16,4 +16,17 @@ menuOpenButton.addEventListener("click", () => {
         link.addEventListener("click", () => menuOpenButton.click());
     });
 
-    
+// Porque me conviene animatio
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".grid-item");
+
+  // Aplica animación con un pequeño retardo en cadena
+  items.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("animate");
+    }, index * 300);
+  });
+
+  
+});
