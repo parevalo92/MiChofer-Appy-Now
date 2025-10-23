@@ -709,7 +709,7 @@ section {
   }
 
   .benefits {
-    width: 460px;
+    width: 400px;
   }
   
   .benefits h2 {
@@ -717,7 +717,7 @@ section {
   }
 
   .benefit{
-    width: 40vh;
-  }
+    width: 35vh;
+    margin-left: -0.5rem;
 }
 
