@@ -709,11 +709,15 @@ section {
   }
 
   .benefits {
-    width: 485px;
+    width: 460px;
   }
   
   .benefits h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .benefit{
+    width: 40vh;
   }
 }
 
