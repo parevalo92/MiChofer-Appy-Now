@@ -716,8 +716,23 @@ section {
     font-size: 2rem;
   }
 
-  .benefit{
-    width: 35vh;
-    margin-left: -0.5rem;
+.benefits {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 60px 10px;
+  text-align: center;
 }
 
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* una sola columna */
+  gap: 1.5rem;
+  justify-items: center; /* centra las tarjetas */
+}
+.benefit {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+}
