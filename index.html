@@ -4,50 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-
+    <title>Mario & Janelle</title>
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <title>Mi chofer</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+    <!-- Linking swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
-<!-- Header / Nav -->
+    <!-- Temp Widget -->
+    <div id="temp-widget" class="temp-widget">
+    <div class="temp-icon">🌤️</div>
+    <div class="temp-info">
+        <span id="temp-value">--°C</span>
+        <small id="temp-city">Cargando...</small>
+      </div>
+        </div>
+
+    <!-- Btn Musica -->
+    <div class="btn-title-music">
+    <span class="btnMusica-text">Play our song</span>
+    <button id="btnMusica">▶</button>
+    </div>
+    <!-- Header / Nav -->
     <header>
         <nav class="navbar section-content">
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">
-                    <img class="logoimg" src="img/logomichifer.png" alt="">
+                    Our Wedding
                 </h2>
             </a>        
-                
+                <!-- Header / Nav -->
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#inicio" class="nav-link"
-                    data-section="header" data-value="home-menu">Inicio</a>
+                    <a href="" class="nav-link"
+                    data-section="header" data-value="home-menu">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sobre" class="nav-link"
-                    data-section="header" data-value="about-menu">¿Por qué unirte?</a>
+                    <a href="#about" class="nav-link"
+                    data-section="header" data-value="about-menu">Our Story</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#beneficios" class="nav-link"
-                    data-section="header" data-value="services-menu">Beneficios</a>
+                    <a href="#countdown-id" class="nav-link"
+                    data-section="header" data-value="testimonials-menu">Countdown</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#requisitos" class="nav-link"
-                    data-section="header" data-value="gallery-menu">Requisitos</a>
+                    <a href="#schedule-id" class="nav-link"
+                    data-section="header" data-value="gallery-menu">Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#formulario" class="nav-link"
-                    data-section="header" data-value="contact-menu">Aplica Ahora</a>
+                    <a href="#travelsandaco-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">Travels & accommodations</a> 
                 </li>
                 <li class="nav-item">
-                    <a href="#contactus" class="nav-link"
-                    data-section="header" data-value="contact-menu">Descarga nuestra app</a>
+                    <a href="#dresscode-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">Dress Code</a> 
                 </li>
+                <li class="nav-item">
+                    <a href="#ourpro-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">Our Proposal</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#donate-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">Gift</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#faq-id" class="nav-link"
+                    data-section="header" data-value="contact-menu">FAQ</a> 
+                </li>
+                
+                <!-- Header / Nav 
                 <div class="langbuttons">
                     <button class="eslogo" data-language="es">
                         <img class="esimg" src="img/eslogo.png" alt="">
@@ -55,128 +89,491 @@
                     <button class="uslogo" data-language="en">
                         <img class="usimg" src="img/uslogo.png" alt="">
                     </button>
-                </div>
+                </div> -->
             </ul>  
             <button id="menu-open-button" class="fas fa-bars"></button> 
         </nav>
     </header>
+    <!-- Hero Section 1 -->
+    <main>
+       <section class="hero-section">
+        <div class="section-content">                      
+            
+        </div>
+       </section> 
 
-    <!-- Hero Section -->
-  <section class="hero" id="inicio">
-    <div class="hero-container">
-      <h1 class="hero-title">Únete a <span>MiChofer.SV</span></h1>
-      <h3 class="hero-text">La app salvadoreña que <br>por fin te permite <br><span class="span-text">GANAR MÁS Y AHORRAR DE VERDAD</span></h3>
-      <h4 style="margin-top:10px;">100 choferes serán seleccionados en los primeros 30 días.</h4>
-      <a href="#formulario" class="btn-hero">Aplicar ahora</a>
-    </div>
-    <div class="img-container">
-      <img class="img-hero" src="img/hero1.png" alt="">
-    </div>
-  </section>
+    
 
-  <!-- Sobre Nosotros -->
-  <section class="about" id="sobre">
-    <div class="about-image">
-      <img class="about-img" src="img/about.png" alt="">
+    <!-- Wedding date section -->
+
+    <section class="wedding-date">
+        <div>
+            <h2 class="date-title">February 14</h2>
+            <p class="date-text">El Salvador, Cardedeu</p>
+             <!-- Wedding date section
+            <iframe src="https://mendozascottwedding.rsvpify.com" width="100%" height="500px" style="border:none;"></iframe>
+             -->
+
+        </div>         
+    </section>
+
+    <!-- Section 2 -->   
+      <section class="section2">
+        <div class="section2-content">
+
+        </div>
+      </section>
+
+    <!--Our Story Section-->
+    <section class="about-section" id="about">
+        <div class="section-content">
+           <div class="about-image-wrapper">
+            <img src="img/os1.jpg" alt="About" class="about-image">
+           </div> 
+           <div class="about-details">
+            <h2 class="section-title"
+            data-section="about-section" data-value="ab-title">Our Story</h2>
+            <p class="text"
+            data-section="about-section" data-value="ab-description">
+            While Mario was living in Nashville, Tennessee, I was there on a bachelorette 
+            trip for one of my best friends. It was the night of June 2nd. After visiting a 
+            couple of places to celebrate, we ended up at Whiskey Row, yes, we met in a bar!. 
+            We made eye contact, but Mario and I were to shy to speak with each other. 
+            The bride to be pulled Mario into our circle and there he was, standing in 
+            front of me. In the early morning of June 3rd, he introduced himself 
+            (in the most formal way), and we danced.
+
+            <br>
+            <br>
+            We then went to Morgan Wallen’s bar with both our groups of friends and danced 
+            nonstop. We ended up talking all night. Mario randomly shared his entire life 
+            with me, and I did the same. We both felt the same way — like we had met our 
+            other half. I had a flight that day back to Oregon. Before saying goodbye, 
+            he told me I would be his wife. I laughed and called him crazy — 
+            it was crazy to hear that from someone I had just met.
+            <br>
+            <br>
+            But here we are, inviting you to our wedding. He was right. lol
+            </p> 
+           </div>
+        </div>
+    </section>
+
+    <!--Countdown Sectiom-->
+    <div class="cd-section" id="countdown-id">
+        <h1 id="headline" class="cd-title">Wedding Date Countdown</h1>
+        <div id="countdown" class="cd-list">
+            <ul>
+                <li class="cd-li"><span id="days" class="cd-span"></span>days</li>
+                <li class="cd-li"><span id="hours" class="cd-span"></span>Hours</li>
+                <li class="cd-li"><span id="minutes" class="cd-span"></span>Minutes</li>
+                <li class="cd-li"><span id="seconds" class="cd-span"></span>Seconds</li>
+            </ul>
+        </div>
+        <div id="content" class="emoji">
+        <span>Let's get the party started</span>
+        </div>
     </div>
-    <div class="about-container">
-      <h1 class="about-title">¿Porque te conviene nuestra app?</h1>
-      <section class="porque-section">
-     <div class="grid-container">
-    <div class="grid-item"><h3>Más apps = más ingresos. No trabajés con 1 o 2… ahora tenés 3 para ganar más.</h3></div>
-    <div class="grid-item"><h3>Nuestras tarifas te dejan más dinero: viajes por hora + viajes One Way bien pagados.</h3></div>
-    <div class="grid-item"><h3>VIP Time Rental: servicio por hora que te da ingresos continuos y usuarios que valoran tu tiempo.</h3></div>
-    <div class="grid-item"><h3>Más dinero, más tranquilidad. Con MiChofer podés crear tu guardadito para mantenimiento, reparaciones y cambiar de carro cada 3 años.</h3></div>
-  </div>
+
+    <!-- Schedule -->
+     <div class="schedule-section" id="schedule-id">
+        <div class="schedule-content">
+            <h1 class="schedule-title">Schedule</h1>
+            <h2 class="section-title">Coming Soon</h2>    
+        </div>        
+     </div>
+
+
+     <h2 class="section-title" id="travelsandaco-id">Travel and Accommodations</h2> 
+    <section class="travel-slider">  
+    <div class="slide active">
+        <img src="img/aeropuerto.png" alt="Aeropuerto">
+        <div class="slide-text">
+            <h2>Getting to El Salvador:</h2>
+            <p>For guests traveling from outside the United States, 
+                the main airport is El Salvador International Airport (SAL), 
+                also known as Monseñor Óscar Arnulfo Romero International Airport. 
+                The airport is about 45 minutes from San Salvador and 1 hour 45 minutes 
+                from Lake Coatepeque, where our venue is located. Taxis, ride-share services,
+                 private drivers, and rental cars are available at the airport. We will be providing 
+                 transportation to and from the airport please go to the FAQ portion of the 
+                 website to find out more about this option</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="img/lago.png" alt="Playa">
+        <div class="slide-text">
+            <h2>Where to Stay</h2>
+            <p class="where-to-stay-text">Our wedding will take place at the beautiful Cardedeu Hotel, located directly on Lake Coatepeque. 
+                Staying at the venue or nearby is highly recommended so you can enjoy the lake and avoid long 
+                travel on the wedding day. Rooms book quickly, so we suggest reserving early.  The best way to 
+                reserve rooms is to contact Ricardo Ayala via text message in WhatsApp, his number is +50378615545. 
+                He will make accommodations for you and how many rooms you will need along with applying the blocked 
+                booking discount. You may need to provide or make him aware that you are booking for the Janelle 
+                and Mario wedding. There are several boutique hotels, small resorts, and lake houses available 
+                around Coatepeque. Airbnb and Vrbo also offer villas with direct lake access. If you decide to 
+                stay in a airbnb or villas there is uber and taxis around the lake that will be a short at most 
+                five minute drive to the venue. If you need any more assistance with bookings or recommendations 
+                please message Mario at 6154732016 or Ricardo for further accommodations.</p>
+        <p></p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="img/city.png" alt="Ciudad">
+        <div class="slide-text">
+            <h2>Option to stay</h2>
+            <p> Staying in San Salvador: If you prefer staying in the capital before <br>
+                or after the wedding, the safest and most convenient areas <br>
+                are Escalón, San Benito, and Santa Elena. <br>
+                These neighborhoods offer modern hotels, great restaurants, <br>
+                and easy transportation.</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="img/ttd.png" alt="Ciudad">
+        <div class="slide-text">
+            <h2>Things to Do in Lago Coatepeque</h2>
+            <p>Boat rides around the crater lake
+        Swimming, kayaking, and paddle boarding</p>
+        </div>
+    </div>
+
+    <div class="controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
 </section>
 
-<script src="animacion.js"></script>
-    </div>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let i = 0;
 
-  </section>
+    document.querySelector('.next').onclick = () => {
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('active');
+    };
 
-  <!-- Beneficios -->
-  <section class="benefits" id="beneficios">
-    <div class="container">
-      <h2>El<span> GUARDADITO</span> es lo que te faltaba</h2>
-      <div class="benefit-grid">
-        <div class="benefit" id="benefit1">
-          <h3>Reparaciones sin drama</h3>
-          <p>Cuando surge un imprevisto, tu guardadito te salva. Reparás, seguís trabajando y no perdés ingresos.</p>
-        </div>
-        <div class="benefit" id="benefit2">
-          <h3>Mantenimientos al día</h3>
-          <p>Mantené tu vehículo siempre al 100% sin afectar tu bolsillo. Tu guardadito te respalda.</p>
-        </div>
-        <div class="benefit" id="benefit3">
-          <h3>Renová tu vehículo cada 3 años</h3>
-          <p>En este trabajo, andar en buen carro es clave. Con tu guardadito podés renovar vehículo cada 3 años sin quedarte parado.</p>
-        </div>  
-      </div>
-    </div>
-  </section>
+    document.querySelector('.prev').onclick = () => {
+        slides[i].classList.remove('active');
+        i = (i - 1 + slides.length) % slides.length;
+        slides[i].classList.add('active');
+    };
+</script>
 
-  <!-- Requisitos -->
-  <section class="requirements" id="requisitos">
-    <div class="container">
-      <h2>Requisitos para aplicar</h2>
-      <ul>
-        <li>✅Licencia de conducir vigente (Tipo Liviana o Superior)</li>
-        <li>✅DUI y antecedentes actualizados</li>
-        <li>✅3 referencias personales verificadas</li>
-        <li>✅Mínimo 3 años de experiencia como conductor</li>
-        <li>✅Teléfono inteligente con conexión a internet</li>
-      </ul>
-    </div>
-  </section>
 
-  <!-- Requisitos Vehiculo-->
-<section class="requirements" id="requisitos">
-    <div class="container">
-      <h2>Requisitos para tu vehículo</h2>
-      <ul>
-          <li>✅ Tarjeta de circulación vigente</li>
-          <li>✅ Vehículo sedán o SUV de 4 puertas</li>
-          <li>✅ Máximo 10 años de antigüedad (2025 → modelos 2015+)</li>
-          <li>✅ Aire acondicionado funcionando (debe ir encendido durante todo el viaje)</li>
-          <li>✅ Vehículo limpio y en buenas condiciones</li>
-      </ul>
-    </div>
-  </section>
-  <!-- Formulario -->
-  <section class="apply" id="formulario">
-    <div class="container">
-      <h2>Aplica ahora</h2>
-      <p>Completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
-      <form action="#" method="POST" class="form">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <!-- Travels & accommodations
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" required>
-
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email">
-
-        <label for="experiencia">¿Tienes experiencia como chofer?</label>
-        <select id="experiencia" name="experiencia">
-          <option value="si">Sí</option>
-          <option value="no">No</option>
-        </select>
-
-        <button type="submit" class="btn">Enviar solicitud</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <section class="footer">
-    <div class="container">
-      <p>© 2025 MiChoferSV. Todos los derechos reservados.</p>
-    </div>
-  </section>
     
+    <div class="travels-section" id="travelsandaco-id">
+        <div class="image-tna">
+            <img class="img-tna" src="img/travel.png" alt="">
+        </div>
+    <div class="travels-content">
+        <h1 class="section-title">Travel and Accommodations</h1>
+    
+        <h2>Getting to El Salvador:</h2>
+        <p class="travel-text">For guests traveling from outside the United States, the main airport is 
+        El Salvador International Airport (SAL), also known as Monseñor Óscar Arnulfo Romero International 
+        Airport. The airport is about 45 minutes from San Salvador and 1 hour 45 minutes from Lake Coatepeque, 
+        where our venue is located. Taxis, ride-share services, private drivers, and rental cars are available at the airport.</p>
+
+        <h2>Where to Stay</h2> 
+        <p class="travel-text">Our wedding will take place at the beautiful Cardedeu Hotel, located directly on Lake Coatepeque. Staying at the venue or nearby is highly recommended so you can enjoy the lake and avoid long travel on the wedding day. Rooms book quickly, so we suggest reserving early.
+        If Cardedeu is full, there are several boutique hotels, small resorts, and lake houses available around Coatepeque. Airbnb and Vrbo also offer villas with direct lake access.</p>
+
+        <p class="travel-text">Staying in San Salvador: If you prefer staying in the capital before or after the wedding, the 
+            safest and most convenient areas are Escalón, San Benito, and Santa Elena. These neighborhoods offer modern hotels, 
+            great restaurants, and easy transportation.</p>
+
+        <h2>Things to Do / Cosas que Hacer
+        Near Lake Coatepeque / Cerca del Lago de Coatepeque</h2>
+
+        <p class="travel-text">English:
+
+        Boat rides around the crater lake
+        Swimming, kayaking, and paddle boarding
+        Santa Ana Volcano hike (incredible turquoise crater!)
+        Café Albania (zip-lines, giant swings, photo spots)
+        Ataco town on the Ruta de las Flores (murals, coffee shops, artisan markets)</p>
+        
+        <p class="travel-text">Español:
+        Paseos en lancha por el lago cratérico
+        Natación, kayak y paddle board
+        Caminata al Volcán de Santa Ana (¡cráter turquesa espectacular!)
+        Café Albania (canopy, columpios gigantes, miradores)
+        Pueblo de Ataco en la Ruta de las Flores (murales, cafés, artesanías)</p>
+
+        <h2>In San Salvador / En San Salvador</h2>
+
+        <p class="travel-text">English:
+        Historic Downtown: plazas, the National Palace, and the iconic El Rosario Church
+        El Boquerón National Park: easy trails and panoramic views of the city
+        Museums: MARTE (art) and MUNA (anthropology)
+        Shopping & nightlife in Multiplaza and La Gran Vía</p>
+
+        <p class="travel-text">Español:
+
+        Centro Histórico: plazas, el Palacio Nacional y la icónica Iglesia El Rosario
+        Parque Nacional El Boquerón: senderos cortos y vistas panorámicas de la ciudad
+        Museos: MARTE (arte) y MUNA (antropología)
+        Centros comerciales y vida nocturna en Multiplaza y La Gran Vía</p>
+
+        <h2>Beaches (If You’re Extending Your Trip) / Playas (Si Extienden Su Viaje)</h2>
+
+        <p class="travel-text">English:
+        El Tunco, El Sunzal, and El Zonte offer surfing, oceanfront dining, yoga, boutique hotels, and unforgettable sunsets.
+        <br>
+        <br>
+        Español:
+        El Tunco, El Sunzal y El Zonte ofrecen surf, restaurantes frente al mar, yoga, hoteles boutique y atardeceres inolvidables.</p>
+        
+        </div>        
+     </div>
+
+      Section --> 
+     
+
+    <!-- Dress code Section --> 
+    <div class="dress-section" id="dresscode-id">
+        <div class="dress-content">
+            <h1 class="dress-title">Dress Code</h1>
+            <p class="dress-text">Formal Attire</p>
+            <img src="img/dress-c.jpg" alt="">   
+        </div>        
+     </div>
+
+    <!-- Our proposal Section --> 
+    
+     <section class="gallery-section" id="ourpro-id">
+        <h2 class="section-title">Our proposal</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/gal1.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal2.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal3.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal4.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal5.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal6.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal7.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal9.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal10.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal11.jpeg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal14.JPG">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal15.JPG">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal16.JPG">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gal17.JPG">
+                <div class="overlay"></div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <span class="close-btn" id="closeBtn">×</span>
+        <img id="modalImg" src="" alt="">
+    </div>
+
+    <!--donate Section --> 
+    <div class="donate-section" id="donate-id">
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="915oac@gmail.com" />
+        <input type="hidden" name="currency_code" value="USD" />
+
+        <label>Wedding Gift:</label><br>
+        <h2>Your presence at our wedding is the most meaningful gift we could receive. Should you wish to honor us with a gift, we kindly invite you to contribute to our wedding fund.</h2>
+        <input type="number" name="amount" min="1" step="0.01"
+         style="padding:10px; margin:10px 0; width:200px; font-size:16px;"><br>
+
+        <input type="submit" value="Donar" 
+         style="background:#0070ba;color:white;padding:12px 20px;border:none;border-radius:8px;cursor:pointer;font-size:18px;">
+        </form>
+      </div>
+
+
+      <div class="faq-container">
+<h1 class="section-title">FAQ</h1>
+
+<!--faq section -->
+
+
+<div class="faq-item" id="faq-id">
+<div class="faq-question">
+Is there parking at the venue if I rent a car or have a car? / 
+¿Hay estacionamiento en el lugar si alquilo un coche o tengo coche?
+<span class="icon">+</span>
+</div>
+<div class="faq-answer">
+<p>Yes / Si</p>
+</div>
+</div>
+
+
+<div class="faq-item">
+<div class="faq-question">
+Is the ceremony and reception at the same location? / ¿Es el mismo lugar la reservación del evento y ceremonia? 
+<span class="icon">+</span>
+</div>
+<div class="faq-answer">
+<p>Yes / Si</p>
+</div>
+</div>
+
+
+<div class="faq-item">
+<div class="faq-question">
+ Will the event be indoors, outdoors, or both? /¿El evento será en un lugar interior, al aire libre o ambos?
+<span class="icon">+</span>
+</div>
+<div class="faq-answer">
+<p>Ceremony will take place indoors at the church Templo Santisima Trinidad and reception will be outdoors with
+     a small indoor area to lounge in. / La ceremonia se llevará a cabo en el interior de la iglesia Templo Santísima 
+     Trinidad y la recepción será al aire libre con una pequeña área interior para descansar.
+</p>
+</div>
+</div>
+
+
+<div class="faq-item">
+<div class="faq-question">
+Is there shuttle from the airport to the venue? / ¿Hay transporte desde el aeropuerto hasta el lugar del evento?
+<span class="icon">+</span>
+</div>
+<div class="faq-answer">
+<p>If you are wanting to use the shuttle we have reserved please respond to 
+    the text recieved for the wedding website with your flight time and date 
+    for scheduled pick up. We are hoping to plan three times for pick up and 
+    drop off per day for people between the dates of February 13- February 15. 
+    If we see that other dates or times are more favored we will accommodate 
+    to what is being requested.<br><br> Si desean utilizar el servicio de transporte
+     (o autobús/lanzadera) que hemos reservado, por favor, respondan al mensaje 
+     de texto que recibieron para el sitio web de la boda indicando la hora y 
+     la fecha de su vuelo para programar la recogida. Esperamos planificar tres 
+     horarios de recogida y de regreso al día para las personas que viajen entre 
+     el 13 y el 15 de febrero. Si notamos que hay otras fechas u horarios con 
+     mayor demanda, nos adaptaremos a lo que se esté solicitando.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Are kids allow? / ¿Pueden ir niños?
+<span class="icon">+</span>
+</div>
+<div class="faq-answer">
+<p>We love your children dearly, but for our special day we’ve decided to keep 
+    the celebration adults-only, 16+. We hope this gives you a chance to relax 
+    and enjoy the evening with us.<br><br>Queremos mucho a sus hijos, pero para
+     nuestro día especial hemos decidido que la celebración sea solo para adultos, 
+     a partir de los 16 años (o mayores de 16 años). Esperamos que esto les dé la 
+     oportunidad de relajarse y disfrutar la noche con nosotros.</p>
+</div>
+</div>
+
+</div>
+
+
+
+
+    <!-- Footer section -->
+     <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">Parevalo92 - 2025</p>
+
+            <div class="social-link-list">
+             
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="policy-text">
+                <a href="" class="policy-link">Privacy policy</a>
+                <span class="separator">°</span>
+                <a href="" class="policy-link">Refund policy</a>
+            </p>
+        </div>
+     </footer>
+
+    </main>
+
+    <!-- TLinking swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- My custom script -->
     <script src="script.js"></script>
+
+    <!-- Autoloop audio-->
+     <div>
+        <audio id="miCancion" class="bg-audio" autoplay loop >
+            <source src="media/bg-sound.mp3" type="audio/mpeg">
+        </audio>
+        
+    </div>
+
+    <!-- Paypal btn -->
+
+
+
 </body>
+
+
+
 </html>
