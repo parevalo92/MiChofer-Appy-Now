@@ -1157,5 +1157,24 @@ transform: rotate(45deg);
         aspect-ratio: 4 / 3;
         min-height: 160px;
     }
+
+    .btnMusica-text {
+        display: none;
+    }
+
+    .btn-title-music {
+    width: 80px;          /* tamaño del círculo */
+    height: 80px;
+    border-radius: 50%;   /* hace el círculo */
+    background: #c8a159;  /* tu color dorado */
+    display: flex;        /* CENTRADO PERFECTO */
+    justify-content: center;
+    align-items: center;
+    }
+
+    #btnMusica {
+        font-size: 35px;
+        margin-left: 0.7rem;
+    }
 }
 
