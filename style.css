@@ -612,6 +612,8 @@ header {
 
     .info-tab {
     width: 270px;
+    bottom: 20px;
+    margin-left: 10px;
   }
 
   .info-tab-text {
