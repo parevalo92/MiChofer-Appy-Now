@@ -253,6 +253,7 @@ header {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   animation: pulse 1.6s ease-in-out infinite;
+  
 }
 
 /* --------------------------------------------------
@@ -618,6 +619,10 @@ header {
 
   .info-tab-text {
     font-size: medium;
+  }
+
+  .grid-item {
+    margin-right: 15px;
   }
 }
 
