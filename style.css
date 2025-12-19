@@ -703,7 +703,7 @@ header {
   }
 
   .hero-video {
-    width: 400px;
-    margin-left: 10px;
+    width: 380px;
+    margin-left: 5PX;
   }
 }
