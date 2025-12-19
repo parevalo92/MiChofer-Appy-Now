@@ -29,6 +29,10 @@
   --border-radius-circle: 50%;
 
   --site-max-width: 1300px;
+
+  /* extras pro */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.10);
+  --shadow-card: 0 10px 25px rgba(0,0,0,0.10);
 }
 
 /* --------------------------------------------------
@@ -52,26 +56,16 @@ body {
   line-height: 1.6;
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
+a { text-decoration: none; }
+button { cursor: pointer; border: none; background: none; }
+img { width: 100%; }
+span { color: #5575a1; }
 
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-img {
-  width: 100%;
-}
-
-span {
-  color: #5575a1;
+/* Tipografía pro para títulos */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2px;
 }
 
 /* --------------------------------------------------
@@ -82,7 +76,7 @@ section {
   padding: 80px 0;
 }
 
-.container {
+.container, .section-content {
   width: 90%;
   max-width: var(--site-max-width);
   margin: 0 auto;
@@ -96,7 +90,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background: #648BC2;
+  background: #252525;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* mejora pro */
+  backdrop-filter: blur(6px);
 }
 
 .navbar {
