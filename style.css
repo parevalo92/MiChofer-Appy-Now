@@ -183,8 +183,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding-top: 140px;
+  gap: 150px;
+  padding-top: 240px;
   background: var(--light-pink-color);
 }
 
@@ -205,6 +205,52 @@ header {
 .img-hero {
   max-width: 450px;
   height: auto;
+}
+
+/* -----------------------------
+   HERO VIDEO CON PLAY
+----------------------------- */
+
+.video-wrapper {
+  position: relative;
+  max-width: 450px;
+}
+
+.video-thumb {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button i {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: 0.3s ease;
+}
+
+.play-button i:hover {
+  background: rgba(0,0,0,0.85);
+  transform: scale(1.15);
+}
+
+.hero-video {
+  display: none;
+  width: 700px;
+  border-radius: 20px;
 }
 
 /* --------------------------------------------------
@@ -532,6 +578,11 @@ header {
   margin-bottom: 15px;
 }
 
+.pie-form {
+  text-align: center;
+  color: rgb(199, 52, 52);
+}
+
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */
@@ -595,6 +646,12 @@ header {
   .hero-container {
     max-width: 100%;
   }
+
+  .hero-video {
+  display: none;
+  width: 500px;
+  border-radius: 20px;
+}
 
   /* ABOUT */
   .about {

@@ -114,3 +114,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.getElementById("playVideo").addEventListener("click", () => {
+  const video = document.getElementById("heroVideo");
+  document.querySelector(".video-thumb").style.display = "none";
+  document.getElementById("playVideo").style.display = "none";
+  video.style.display = "block";
+  video.setAttribute("controls", "controls");
+  video.play();
+});
+
