@@ -1,0 +1,211 @@
+/* BLOG PAGE LAYOUT */
+.blog-page {
+  padding-top: 140px; /* para que el header fixed no tape el contenido */
+}
+
+.blog-hero {
+  padding: 40px 0 30px;
+  background: #faf4f5;
+}
+
+.blog-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.blog-subtitle {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Controls */
+.blog-controls {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 15px;
+  align-items: center;
+}
+
+.blog-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.blog-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.blog-select {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  font-size: 1rem;
+}
+
+/* Posts grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card-body {
+  padding: 16px;
+}
+
+.post-meta {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.post-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.post-card p {
+  opacity: 0.92;
+  margin-bottom: 14px;
+}
+
+.post-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #4a6ef5;
+}
+
+.empty-state {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .blog-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-page {
+    padding-top: 120px;
+  }
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 25px;
+  align-items: start;
+}
+
+.blog-aside {
+  position: sticky;
+  top: 120px; /* para que no choque con tu header fixed */
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.aside-title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #252525;
+}
+
+.recommended-list {
+  display: grid;
+  gap: 12px;
+}
+
+.recommended-item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: #faf4f5;
+}
+
+.recommended-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.recommended-item h3 {
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.recommended-item small {
+  display: inline-block;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.recommended-badge {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #252525;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+  .blog-aside {
+    position: static;
+    top: auto;
+  }
+}

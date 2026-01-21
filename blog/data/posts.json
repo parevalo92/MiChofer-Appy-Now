@@ -1,0 +1,72 @@
+[
+  {
+  "title": "Requisitos para trabajar como chofer en El Salvador (guía completa)",
+  "slug": "requisitos-chofer-el-salvador",
+  "excerpt": "Documentos, solvencias y recomendaciones para aplicar sin perder tiempo.",
+  "date": "2026-01-14",
+  "category": "Requisitos",
+  "tags": ["dui", "licencia"],
+  "cover": "/img/about.png",
+  "alt": "Chofer revisando requisitos para aplicar",
+  "readingTime": "6 min",
+
+  "recommended": true,
+  "recommendedLabel": "🔥 Popular (Ads)"
+},
+  {
+    "title": "Cómo ganar más como chofer: hábitos que sí suben tus ingresos",
+    "slug": "como-ganar-mas-chofer",
+    "excerpt": "Estrategias prácticas: horarios, zonas, servicio y cómo cuidar tu carro para no perder días de trabajo.",
+    "date": "2026-01-10",
+    "category": "Ganancias",
+    "tags": ["ingresos", "horarios", "zonas", "servicio"],
+    "cover": "/img/hero1.png",
+    "alt": "Auto listo para trabajar y generar ingresos",
+    
+
+    "recommended": true,
+    "recommendedLabel": "🔥 Popular (Ads)"
+  },
+  {
+    "title": "Seguridad para choferes: checklist antes y durante cada viaje",
+    "slug": "seguridad-para-choferes-checklist",
+    "excerpt": "Buenas prácticas para reducir riesgos: verificación, comunicación, puntos de encuentro y señales de alerta.",
+    "date": "2026-01-08",
+    "category": "Guardadito",
+    "tags": ["seguridad", "checklist", "prevencion"],
+    "cover": "/img/client-ma.png",
+    "alt": "Chofer siguiendo un checklist de seguridad",
+    
+
+    "recommended": true,
+    "recommendedLabel": "🔥 Popular (Ads)"
+  },
+  {
+    "title": "Seguridad para choferes: checklist antes y durante cada viaje",
+    "slug": "seguridad-para-choferes-checklist",
+    "excerpt": "Buenas prácticas para reducir riesgos: verificación, comunicación, puntos de encuentro y señales de alerta.",
+    "date": "2026-01-08",
+    "category": "Seguridad",
+    "tags": ["seguridad", "checklist", "prevencion"],
+    "cover": "/img/client-ma.png",
+    "alt": "Chofer siguiendo un checklist de seguridad",
+    "readingTime": "7 min",
+
+    "recommended": true,
+    "recommendedLabel": "🔥 Popular (Ads)"
+  },
+  {
+    "title": "Seguridad para choferes: checklist antes y durante cada viaje",
+    "slug": "seguridad-para-choferes-checklist",
+    "excerpt": "Buenas prácticas para reducir riesgos: verificación, comunicación, puntos de encuentro y señales de alerta.",
+    "date": "2026-01-08",
+    "category": "Seguridad",
+    "tags": ["seguridad", "checklist", "prevencion"],
+    "cover": "/img/client-ma.png",
+    "alt": "Chofer siguiendo un checklist de seguridad",
+    "readingTime": "7 min",
+
+    "recommended": true,
+    "recommendedLabel": "🔥 Popular (Ads)"
+  }
+]

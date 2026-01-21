@@ -1,0 +1,204 @@
+/* ====== POST PAGE (ANTI-CONFLICTOS CON style.css) ====== */
+
+.post-page {
+  padding-top: 140px; /* compensa header fixed */
+}
+
+/* Evita que el padding global de section afecte */
+.post-page section {
+  padding: 0;
+}
+
+.post-breadcrumbs {
+  padding: 20px 0;
+  background: #fff;
+}
+
+.post-breadcrumbs a {
+  color: #4a6ef5;
+  font-weight: 700;
+}
+
+.post-article {
+  padding: 25px 0 70px;
+}
+
+.post-header h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+/* ✅ Arregla el cuadro de meta enorme */
+.post-meta {
+  display: inline-flex;           /* en vez de flex full width */
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #252525;            /* cajita controlada */
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;             /* ✅ tamaño correcto */
+  margin: 0 auto 16px;            /* centrado */
+  width: fit-content;             /* ✅ no se hace gigante */
+}
+
+/* evita que el span global cambie color dentro del meta */
+.post-meta span {
+  color: inherit !important;
+}
+
+.post-lead {
+  text-align: center;
+  font-size: 1.15rem;
+  max-width: 900px;
+  margin: 0 auto 18px;
+  opacity: 0.95;
+}
+
+/* ✅ Arregla imagen gigante por img{width:100%} */
+.post-cover {
+  display: block;
+  width: 100%;
+  max-width: 900px;     /* ✅ limita el ancho */
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 18px auto 22px; /* ✅ centrada */
+}
+
+/* Contenido */
+.post-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-content h2 {
+  scroll-margin-top: 160px;
+  margin-top: 26px;
+  font-size: 1.6rem;
+  color: #5575a1;
+}
+
+.post-content p,
+.post-content li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.checklist {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+/* CTA */
+.post-cta {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn.secondary {
+  background: #252525;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .post-page {
+    padding-top: 120px;
+  }
+  .post-header h1 {
+    font-size: 2rem;
+  }
+  .post-meta {
+    border-radius: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+  .post-cover {
+    max-width: 100%;
+  }
+}
+
+
+/* Evita que el selector global header{} afecte el header del post */
+.post-article .post-header {
+  position: static !important;
+  background: transparent !important;
+  width: auto !important;
+  z-index: auto !important;
+}
+
+.post-recommended {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommended-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.recommended-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  display: block;
+  color: inherit;
+}
+
+.recommended-card:hover {
+  transform: translateY(-4px);
+}
+
+.recommended-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.recommended-card-body {
+  padding: 14px;
+}
+
+.recommended-card-body h3 {
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.recommended-card-body small {
+  display: inline-block;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.recommended-badge {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #252525;
+  color: #fff;
+}
+
