@@ -79,6 +79,7 @@ span {
 -------------------------------------------------- */
 
 section {
+  scroll-margin-top: 135px;
   padding: 80px 0;
 }
 
@@ -92,7 +93,7 @@ section {
    NAVBAR
 -------------------------------------------------- */
 
-header {
+body > header {
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -128,8 +129,13 @@ header {
   transition: 0.3s ease;
 }
 
+.nav-item {
+  scroll-margin-top: 260px;
+}
+
 .nav-link:hover {
-  background: #5d7ead;
+  background: white;
+  color: black;
 }
 
 /* ICONOS MOBILE */
@@ -590,12 +596,31 @@ header {
    FOOTER
 -------------------------------------------------- */
 
-.footer {
+.footer-section {
   background: var(--dark-color);
   color: white;
-  padding: 20px;
+  padding: 40px 0;
   text-align: center;
-  height: 190px;
+}
+
+.store-logos img {
+  width: 150px;
+}
+
+.social-link-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-link {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  transition: .3s;
+}
+
+.social-link:hover {
+  color: var(--secondary-color);
 }
 
 /* --------------------------------------------------
