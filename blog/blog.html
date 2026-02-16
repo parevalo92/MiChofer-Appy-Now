@@ -7,36 +7,39 @@
   <title>Blog MiChoferSV | Consejos para choferes y requisitos</title>
   <meta name="description" content="Guías y consejos para choferes en El Salvador: requisitos, trámites, ganancias, seguridad y más." />
 
-  <!-- Puedes reutilizar tu CSS principal si quieres mantener header/variables -->
+  <!-- Estilos (rutas relativas para que funcione en GitHub Pages) -->
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./blog.css">
 
-  <!-- Font Awesome (ya lo usas en la landing) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- Header: reutilizamos tu estructura -->
+  <!-- Header -->
   <header>
     <nav class="navbar section-content">
-      <a href="../index.html" class="nav-logo">
+      <a href="../index.html" class="nav-logo" aria-label="Ir al inicio">
         <h2 class="logo-text">
           <img class="logoimg" src="../img/logo.png" alt="MiChoferSV">
         </h2>
       </a>
 
       <ul class="nav-menu">
-        <button id="menu-close-button" class="fas fa-times"></button>
+        <button id="menu-close-button" class="fas fa-times" aria-label="Cerrar menú"></button>
+
         <li class="nav-item"><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
         <li class="nav-item"><a href="../index.html#sobre" class="nav-link">¿Por qué unirte?</a></li>
         <li class="nav-item"><a href="../index.html#formulario" class="nav-link">Aplica Ahora</a></li>
         <li class="nav-item"><a href="../index.html#requisitos" class="nav-link">Requisitos</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Descargar APP</a></li>    
-        <!-- Link al blog (activo aquí) -->
+        <li class="nav-item"><a href="#" class="nav-link">Descargar APP</a></li>
+
+        <!-- Blog -->
         <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
       </ul>
 
-      <button id="menu-open-button" class="fas fa-bars"></button>
+      <button id="menu-open-button" class="fas fa-bars" aria-label="Abrir menú"></button>
     </nav>
   </header>
 
@@ -52,7 +55,7 @@
 
         <div class="blog-controls">
           <div class="blog-search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             <input id="searchInput" type="search" placeholder="Buscar: requisitos, ganancias, seguridad..." />
           </div>
 
@@ -64,28 +67,25 @@
     </section>
 
     <section class="blog-list">
-      <div class="container">
-        <div id="postsGrid" class="posts-grid">
-          <!-- JS inserta cards aquí -->
-           <div class="blog-layout">
-  <div>
-    <div id="postsGrid" class="posts-grid"></div>
-    <p id="emptyState" class="empty-state" style="display:none;">
-      No encontramos resultados con ese filtro/búsqueda.
-    </p>
-  </div>
+      <div class="container blog-layout">
 
-  <aside class="blog-aside">
-    <h2 class="aside-title">Recomendados</h2>
-    <div id="recommendedList" class="recommended-list"></div>
-  </aside>
-</div>
+        <!-- Columna principal -->
+        <div>
+          <!-- OJO: SOLO UN postsGrid -->
+          <div id="postsGrid" class="posts-grid"></div>
 
+          <!-- OJO: SOLO UN emptyState -->
+          <p id="emptyState" class="empty-state" style="display:none;">
+            No encontramos resultados con ese filtro/búsqueda.
+          </p>
         </div>
 
-        <p id="emptyState" class="empty-state" style="display:none;">
-          No encontramos resultados con ese filtro/búsqueda.
-        </p>
+        <!-- Aside recomendados -->
+        <aside class="blog-aside">
+          <h2 class="aside-title">Recomendados</h2>
+          <div id="recommendedList" class="recommended-list"></div>
+        </aside>
+
       </div>
     </section>
 
@@ -97,7 +97,8 @@
     </div>
   </footer>
 
-  <!-- Tu script principal (para menú mobile) si lo necesitas -->
+  <!-- Script SOLO para el menú (si tu script.js tiene cosas del home, NO lo cargues aquí) -->
+  <!-- Si tu script.js es exclusivo del HOME, elimínalo aquí. Si solo maneja menú, puedes dejarlo. -->
   <script src="../script.js"></script>
 
   <!-- Script del blog -->

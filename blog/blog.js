@@ -37,7 +37,7 @@ function formatDate(isoDate) {
 // -----------------------------
 async function loadPosts() {
   try {
-    const res = await fetch("../blog/data/posts.json");
+    const res = await fetch("./data/posts.json");
     if (!res.ok) throw new Error(`No se pudo cargar posts.json (status ${res.status})`);
     const posts = await res.json();
     if (!Array.isArray(posts)) throw new Error("posts.json no es un array");
