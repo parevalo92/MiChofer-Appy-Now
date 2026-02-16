@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // 1) Cargar posts.json
   let posts = [];
   try {
-    const res = await fetch("/blog/data/posts.json", { cache: "no-store" });
+    const res = await fetch("../data/posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error("No se pudo cargar posts.json (status " + res.status + ")");
     posts = await res.json();
   } catch (err) {
