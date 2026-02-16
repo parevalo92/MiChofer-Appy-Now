@@ -1,127 +1,96 @@
+"use strict";
+
 const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 
-menuOpenButton.addEventListener("click", () => {
-//Toggle mobile menu
+// Toggle mobile menu
+if (menuOpenButton) {
+  menuOpenButton.addEventListener("click", () => {
     document.body.classList.toggle("show-mobile-menu");
-});
+  });
+}
 
-//Close menu whe the close button is clicked
-    menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+// Close menu
+if (menuCloseButton && menuOpenButton) {
+  menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+}
 
-//Close menu whe the nav link is clicked
+// Close menu when nav link clicked
+if (menuOpenButton) {
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => menuOpenButton.click());
+  });
+}
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => menuOpenButton.click());
-    });
-
-// Porque me conviene animatio
-
-
-
-// Initialize Swiper
-
-const swiper = new Swiper('.slider-wrapper', {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 25,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-//Responsives Breakpoints
-
-  breakpoints: {
-    0: {
-        slidesPerView: 1
+// Initialize Swiper (solo si existe y está cargado)
+if (window.Swiper && document.querySelector(".slider-wrapper")) {
+  new Swiper(".slider-wrapper", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 25,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
     },
-    768: {
-        slidesPerView: 2
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    1024: {
-        slidesPerView: 3
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
     },
-  }
-});
+  });
+}
 
-// Animación del fondo del banner usando JavaScript
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Seleccionamos el banner
+  // Banner animation
   const banner = document.querySelector(".banner-income");
+  if (banner) {
+    banner.style.backgroundImage =
+      "linear-gradient(90deg, #4a6ef5, #5575a1, #4a6ef5)";
+    banner.style.backgroundSize = "400% 400%";
+    banner.style.backgroundRepeat = "repeat";
 
-  // Si no existe, salimos para que no dé error
-  if (!banner) {
-    console.warn("No se encontró ningún elemento con la clase .banner-income");
-    return;
-  }
-
-  // 2. Configuramos el fondo desde JS (sin tocar tu CSS en el archivo)
-  banner.style.backgroundImage = "linear-gradient(90deg, #4a6ef5, #5575a1, #4a6ef5)";
-  banner.style.backgroundSize = "400% 400%";   // Muy importante para que el movimiento se note
-  banner.style.backgroundRepeat = "repeat";
-
-  // 3. Animación con requestAnimationFrame
-  let pos = 0;
-
-  function animateBackground() {
-    pos += 0.1; // velocidad (sube para más rápido, baja para más lento)
-
-    // Movemos el fondo horizontalmente
-    banner.style.backgroundPosition = pos + "% 50%";
-
-    // Reseteamos para que no crezca infinito
-    if (pos > 400) {
-      pos = 0;
+    let pos = 0;
+    function animateBackground() {
+      pos += 0.1;
+      banner.style.backgroundPosition = pos + "% 50%";
+      if (pos > 400) pos = 0;
+      requestAnimationFrame(animateBackground);
     }
-
-    requestAnimationFrame(animateBackground);
+    animateBackground();
   }
 
-  // Iniciamos animación
-  animateBackground();
-});
-
-
-// According
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Selecciona todos los bloques de requisitos
+  // Accordion requirements
   const sections = document.querySelectorAll(".requirements");
-
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const title = section.querySelector(".requirements-title");
     const list = section.querySelector("ul");
+    if (!title || !list) return;
 
-    // Estado inicial cerrado
     list.classList.remove("open");
-
-    // Evento al hacer clic en el título
     title.addEventListener("click", () => {
       list.classList.toggle("open");
       title.classList.toggle("active");
     });
   });
-});
 
-document.getElementById("playVideo").addEventListener("click", () => {
+  // Video hero
+  const playBtn = document.getElementById("playVideo");
   const video = document.getElementById("heroVideo");
-  document.querySelector(".video-thumb").style.display = "none";
-  document.getElementById("playVideo").style.display = "none";
-  video.style.display = "block";
-  video.setAttribute("controls", "controls");
-  video.play();
+  const thumb = document.querySelector(".video-thumb");
+
+  if (playBtn && video) {
+    playBtn.addEventListener("click", () => {
+      if (thumb) thumb.style.display = "none";
+      playBtn.style.display = "none";
+      video.style.display = "block";
+      video.setAttribute("controls", "controls");
+      video.play().catch(() => {});
+    });
+  }
 });
-
-
-

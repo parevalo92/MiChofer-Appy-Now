@@ -623,6 +623,10 @@ body > header {
   color: var(--secondary-color);
 }
 
+.policy-link {
+  color: white;
+}
+
 /* --------------------------------------------------
    RESPONSIVE
 -------------------------------------------------- */
@@ -701,6 +705,7 @@ body > header {
     width: 270px;
     bottom: 20px;
     margin-left: 10px;
+    visibility: hidden;
   }
 
   .info-tab-text {
