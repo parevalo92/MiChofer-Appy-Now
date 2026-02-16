@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog MiChoferSV | Consejos para choferes y requisitos</title>
+  <meta name="description" content="Guías y consejos para choferes en El Salvador: requisitos, trámites, ganancias, seguridad y más." />
+
+  <!-- Puedes reutilizar tu CSS principal si quieres mantener header/variables -->
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="/blog/blog.css"/>
+
+  <!-- Font Awesome (ya lo usas en la landing) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header: reutilizamos tu estructura -->
+  <header>
+    <nav class="navbar section-content">
+      <a href="../index.html" class="nav-logo">
+        <h2 class="logo-text">
+          <img class="logoimg" src="../img/logo.png" alt="MiChoferSV">
+        </h2>
+      </a>
+
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="../index.html#sobre" class="nav-link">¿Por qué unirte?</a></li>
+        <li class="nav-item"><a href="../index.html#formulario" class="nav-link">Aplica Ahora</a></li>
+        <li class="nav-item"><a href="../index.html#requisitos" class="nav-link">Requisitos</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Descargar APP</a></li>    
+        <!-- Link al blog (activo aquí) -->
+        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+      </ul>
+
+      <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="blog-page">
+
+    <section class="blog-hero">
+      <div class="container">
+        <h1 class="blog-title">Blog <span>MiChoferSV</span></h1>
+        <p class="blog-subtitle">
+          Consejos, guías y requisitos para choferes en El Salvador. Contenido pensado para ayudarte a ganar más y trabajar mejor.
+        </p>
+
+        <div class="blog-controls">
+          <div class="blog-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchInput" type="search" placeholder="Buscar: requisitos, ganancias, seguridad..." />
+          </div>
+
+          <select id="categorySelect" class="blog-select">
+            <option value="all">Todas las categorías</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-list">
+      <div class="container">
+        <div id="postsGrid" class="posts-grid">
+          <!-- JS inserta cards aquí -->
+           <div class="blog-layout">
+  <div>
+    <div id="postsGrid" class="posts-grid"></div>
+    <p id="emptyState" class="empty-state" style="display:none;">
+      No encontramos resultados con ese filtro/búsqueda.
+    </p>
+  </div>
+
+  <aside class="blog-aside">
+    <h2 class="aside-title">Recomendados</h2>
+    <div id="recommendedList" class="recommended-list"></div>
+  </aside>
+</div>
+
+        </div>
+
+        <p id="emptyState" class="empty-state" style="display:none;">
+          No encontramos resultados con ese filtro/búsqueda.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 MiChoferSV. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Tu script principal (para menú mobile) si lo necesitas -->
+  <script src="../script.js"></script>
+
+  <!-- Script del blog -->
+  <script src="/blog/blog.js"></script>
+
+</body>
+</html>
