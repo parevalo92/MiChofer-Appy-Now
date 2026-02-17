@@ -6,7 +6,7 @@
   "date": "2026-01-14",
   "category": "Requisitos",
   "tags": ["dui", "licencia"],
-  "cover": "/img/about.png",
+  "cover": "../img/about.png",
   "alt": "Chofer revisando requisitos para aplicar",
   "readingTime": "6 min",
 
@@ -20,7 +20,7 @@
     "date": "2026-01-10",
     "category": "Ganancias",
     "tags": ["ingresos", "horarios", "zonas", "servicio"],
-    "cover": "/img/hero1.png",
+    "cover": "../img/hero1.png",
     "alt": "Auto listo para trabajar y generar ingresos",
     
 
@@ -34,7 +34,7 @@
     "date": "2026-01-08",
     "category": "Guardadito",
     "tags": ["seguridad", "checklist", "prevencion"],
-    "cover": "/img/client-ma.png",
+    "cover": "../img/client-ma.png",
     "alt": "Chofer siguiendo un checklist de seguridad",
     
 
@@ -48,7 +48,7 @@
     "date": "2026-01-08",
     "category": "Seguridad",
     "tags": ["seguridad", "checklist", "prevencion"],
-    "cover": "/img/client-ma.png",
+    "cover": "../img/client-ma.png",
     "alt": "Chofer siguiendo un checklist de seguridad",
     "readingTime": "7 min",
 
@@ -62,7 +62,7 @@
     "date": "2026-01-08",
     "category": "Seguridad",
     "tags": ["seguridad", "checklist", "prevencion"],
-    "cover": "/img/client-ma.png",
+    "cover": "../img/client-ma.png",
     "alt": "Chofer siguiendo un checklist de seguridad",
     "readingTime": "7 min",
 
